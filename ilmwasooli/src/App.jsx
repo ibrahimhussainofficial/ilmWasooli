@@ -6,7 +6,7 @@ import Faqs from "./pages/Faqs";
 import WhoWeAre from "./pages/WhoWeAre";
 import Footer from "./components/Footer";
 import RequestDemoPage from "./pages/RequestDemo";
-import NotFoundPage from './pages/NotFoundPage'
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (

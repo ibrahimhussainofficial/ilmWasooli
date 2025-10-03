@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet";
 
 export default function RequestDemo() {
   useEffect(() => {
@@ -44,6 +45,14 @@ export default function RequestDemo() {
           "linear-gradient(135deg, #2dce89 0%, #28b673 50%, #3ab189 75%, #1e7d55 100%)",
       }}
     >
+      <Helmet>
+        <title>Request a Demo - ILM Wasooli</title>
+        <meta
+          name="description"
+          content="Request a demo of ILM Wasooli software solution. Fill out the form to get started."
+        />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <div
         className="w-full max-w-4xl bg-white rounded-2xl shadow-xl p-6 sm:p-10 mx-auto"
         data-aos="fade-up"

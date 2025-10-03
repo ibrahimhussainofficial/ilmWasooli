@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet";
 
 const WhoWeAre = () => {
   useEffect(() => {
@@ -9,6 +10,31 @@ const WhoWeAre = () => {
 
   return (
     <div className="bg-gray-50 text-gray-900 font-sans px-6 sm:px-10 lg:px-20 py-20 mt-20 min-h-screen">
+      <Helmet>
+        <title>
+          About Us – Logics Labs | Leading Software Company in Karachi
+        </title>
+        <meta
+          name="description"
+          content="Logics Labs is a top IT and software company based in Karachi, Pakistan. Since 2016, we’ve delivered innovative digital solutions including websites, mobile apps, desktop software, and ERP systems."
+        />
+        <meta
+          name="keywords"
+          content="Logics Labs, software company in Karachi, web development, mobile app development, ERP systems, IT services Pakistan"
+        />
+        <meta name="author" content="Logics Labs" />
+
+        {/* Open Graph (for social media sharing) */}
+        <meta
+          property="og:title"
+          content="About Logics Labs | Trusted IT Company in Karachi"
+        />
+        <meta
+          property="og:description"
+          content="Discover our mission, services, and team behind Logics Labs – a leading IT company delivering web, mobile, and ERP solutions across Pakistan."
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       {/* Hero Section */}
       <header
         className="max-w-4xl mx-auto text-center mb-20"
